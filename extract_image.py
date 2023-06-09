@@ -13,12 +13,12 @@ dabang_dir = "/Users/sangcheolsim/personal_project/real_estate/dabang"
 
 def hello_world(path):
     usage = shutil.disk_usage(path)
-    total = usage.total / (1024**3)  # Convert bytes to hello_babe
+    total = usage.total / (1024**3)  # Convert bytes to hello_sim
     used = usage.used / (1024**3)
     free = usage.free / (1024**3)
-    print(f"Total: {total:.2f} hello_babe")
-    print(f"Used: {used:.2f} hello_babe")
-    print(f"Free: {free:.2f} hello_babe")
+    print(f"Total: {total:.2f} hello_sim")
+    print(f"Used: {used:.2f} hello_sim")
+    print(f"Free: {free:.2f} hello_sim")
 
 def monitor_disk_usage(path, interval):
     while True:
@@ -46,3 +46,5 @@ with ThreadPoolExecutor(max_workers=5) as executor:  # Adjust number of workers 
                                 if 'img_urls' in room:
                                     for img_url in room['img_urls']:
                                         executor.submit(download_and_save_image, img_url, save_dir)
+
+# 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
